@@ -1,4 +1,5 @@
 <p align="center">
+  <img src="assets/banner.png" alt="Starship Toolkit for VS Code" width="100%">
 </p>
 
 <h1 align="center">Starship Toolkit</h1>
@@ -13,6 +14,9 @@
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=andreahlert.starship-vscode-toolkit">
     <img src="https://img.shields.io/visual-studio-marketplace/i/andreahlert.starship-vscode-toolkit?style=flat-square&color=%23f97316" alt="Installs">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=andreahlert.starship-vscode-toolkit">
+    <img src="https://img.shields.io/visual-studio-marketplace/r/andreahlert.starship-vscode-toolkit?style=flat-square&color=%23f97316" alt="Rating">
   </a>
   <a href="https://github.com/andreahlert/starship-vscode-toolkit/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/andreahlert/starship-vscode-toolkit?style=flat-square&color=%23f97316" alt="License">
@@ -37,11 +41,17 @@ Full autocompletion for all ~70 Starship modules, their options, style strings, 
 - **Style strings** - Complete modifiers (`bold`, `italic`, `dimmed`) and colors (`red`, `fg:#hex`, `bg:blue`)
 - **Format variables** - Suggest `$symbol`, `$version`, `$branch`, etc. based on the current module
 
+<p align="center">
+  <img src="assets/demo-completion.gif" alt="IntelliSense completions demo" width="700">
+</p>
 
 ### Hover Documentation
 
 Hover over any module name or option to see its description, type, default value, and a direct link to the Starship documentation.
 
+<p align="center">
+  <img src="assets/demo-hover.gif" alt="Hover documentation demo" width="700">
+</p>
 
 ### Diagnostics and Validation
 
@@ -51,6 +61,10 @@ Real-time validation catches configuration errors as you type:
 - Unknown options within modules
 - Invalid style strings
 - Type mismatches (string where boolean expected, etc.)
+
+<p align="center">
+  <img src="assets/demo-diagnostics.gif" alt="Diagnostics and validation demo" width="700">
+</p>
 
 
 ### Snippets

@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <style>
+      @keyframes fadeInTooltip {
+        0%, 40% { opacity: 0; transform: translateY(4px); }
+        50%, 100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes highlightKey {
+        0%, 35% { fill: #9cdcfe; }
+        40%, 100% { fill: #ffffff; text-decoration: underline; }
+      }
+      @keyframes underlineAppear {
+        0%, 35% { opacity: 0; }
+        40%, 100% { opacity: 1; }
+      }
+      @keyframes cursorBlink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0; }
+      }
+      .editor-bg { fill: #1e1e1e; }
+      .titlebar { fill: #323233; }
+      .line-num { fill: #555; font-family: 'Cascadia Code', 'Fira Code', Consolas, monospace; font-size: 13px; }
+      .code { font-family: 'Cascadia Code', 'Fira Code', Consolas, monospace; font-size: 13px; }
+      .key { fill: #9cdcfe; }
+      .string { fill: #ce9178; }
+      .section { fill: #dcdcaa; }
+      .comment { fill: #6a9955; }
+      .operator { fill: #d4d4d4; }
+      .number { fill: #b5cea8; }
+      .hover-key {
+        animation: highlightKey 3s ease forwards;
+      }
+      .hover-underline {
+        animation: underlineAppear 3s ease forwards;
+        opacity: 0;
+      }
+      .tooltip {
+        animation: fadeInTooltip 3s ease forwards;
+        opacity: 0;
+      }
+    </style>
+  </defs>
+
+  <!-- Window frame -->
+  <rect width="800" height="400" rx="8" class="editor-bg" stroke="#333" stroke-width="1"/>
+
+  <!-- Title bar -->
+  <rect width="800" height="32" rx="8" class="titlebar"/>
+  <rect y="24" width="800" height="8" class="titlebar"/>
+  <circle cx="20" cy="16" r="6" fill="#ff5f57"/>
+  <circle cx="40" cy="16" r="6" fill="#febc2e"/>
+  <circle cx="60" cy="16" r="6" fill="#28c840"/>
+  <rect x="85" y="4" width="150" height="24" fill="#1e1e1e" rx="4"/>
+  <text x="97" y="20" class="code" font-size="11" fill="#ccc">starship.toml</text>
+
+  <!-- Editor content -->
+  <g class="code">
+    <!-- Line 1 -->
+    <text x="20" y="58" class="line-num">1</text>
+    <text x="50" y="58" class="comment"># Directory display settings</text>
+
+    <!-- Line 2 -->
+    <text x="20" y="78" class="line-num">2</text>
+    <text x="50" y="78" class="section">[directory]</text>
+
+    <!-- Line 3: the hovered line -->
+    <text x="20" y="98" class="line-num">3</text>
+    <text x="50" y="98" class="hover-key">truncation_length</text>
+    <!-- Underline for hover -->
+    <line x1="50" y1="101" x2="196" y2="101" stroke="#9cdcfe" stroke-width="1" class="hover-underline"/>
+    <text x="196" y="98" class="operator"> = </text>
+    <text x="220" y="98" class="number">3</text>
+
+    <!-- Line 4 -->
+    <text x="20" y="118" class="line-num">4</text>
+    <text x="50" y="118" class="key">truncate_to_repo</text>
+    <text x="186" y="118" class="operator"> = </text>
+    <text x="210" y="118" class="number">true</text>
+
+    <!-- Line 5 -->
+    <text x="20" y="138" class="line-num">5</text>
+    <text x="50" y="138" class="key">style</text>
+    <text x="90" y="138" class="operator"> = </text>
+    <text x="114" y="138" class="string">"bold cyan"</text>
+
+    <!-- Line 6 -->
+    <text x="20" y="158" class="line-num">6</text>
+    <text x="50" y="158" class="key">format</text>
+    <text x="98" y="158" class="operator"> = </text>
+    <text x="122" y="158" class="string">"[$path]($style) "</text>
+
+    <!-- Line 7 -->
+    <text x="20" y="178" class="line-num">7</text>
+
+    <!-- Line 8 -->
+    <text x="20" y="198" class="line-num">8</text>
+    <text x="50" y="198" class="section">[git_branch]</text>
+
+    <!-- Line 9 -->
+    <text x="20" y="218" class="line-num">9</text>
+    <text x="50" y="218" class="key">symbol</text>
+    <text x="98" y="218" class="operator"> = </text>
+    <text x="122" y="218" class="string">" "</text>
+
+    <!-- Line 10 -->
+    <text x="20" y="238" class="line-num">10</text>
+    <text x="50" y="238" class="key">style</text>
+    <text x="90" y="238" class="operator"> = </text>
+    <text x="114" y="238" class="string">"bold purple"</text>
+  </g>
+
+  <!-- Hover tooltip -->
+  <g class="tooltip">
+    <!-- Tooltip background with shadow -->
+    <rect x="48" y="106" width="380" height="168" rx="4" fill="#000" opacity="0.2" transform="translate(2,2)"/>
+    <rect x="48" y="106" width="380" height="168" rx="4" fill="#252526" stroke="#454545" stroke-width="1"/>
+
+    <!-- Tooltip content -->
+    <g font-family="'Inter', 'Helvetica Neue', Arial, sans-serif">
+      <!-- Title -->
+      <text x="62" y="130" font-size="14" font-weight="700" fill="#f97316">truncation_length</text>
+
+      <!-- Divider -->
+      <line x1="62" y1="138" x2="414" y2="138" stroke="#454545" stroke-width="1"/>
+
+      <!-- Type -->
+      <text x="62" y="158" font-size="12" fill="#888">Type:</text>
+      <text x="100" y="158" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="12" fill="#4ec9b0">integer</text>
+
+      <!-- Default -->
+      <text x="170" y="158" font-size="12" fill="#888">Default:</text>
+      <text x="222" y="158" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="12" fill="#b5cea8">3</text>
+
+      <!-- Description -->
+      <text x="62" y="182" font-size="12" fill="#cccccc">The number of parent folders that the</text>
+      <text x="62" y="198" font-size="12" fill="#cccccc">current directory should be truncated to.</text>
+
+      <!-- Module -->
+      <text x="62" y="222" font-size="11" fill="#888">Module:</text>
+      <text x="112" y="222" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="11" fill="#dcdcaa">directory</text>
+
+      <!-- Link -->
+      <text x="62" y="246" font-size="11" fill="#888">Docs:</text>
+      <text x="96" y="246" font-size="11" fill="#3794ff" text-decoration="underline">https://starship.rs/config/#directory</text>
+
+      <!-- Orange accent bar on left -->
+      <rect x="48" y="106" width="3" height="168" rx="1" fill="#f97316"/>
+    </g>
+  </g>
+</svg>
