@@ -9,14 +9,14 @@
 </p>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=andreahlert.starship-vscode-toolkit">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/andreahlert.starship-vscode-toolkit?style=flat-square&color=%23f97316&label=VS%20Code%20Marketplace" alt="VS Code Marketplace">
+  <a href="https://marketplace.visualstudio.com/items?itemName=atoolz.starship-vscode-toolkit">
+    <img src="https://img.shields.io/visual-studio-marketplace/v/atoolz.starship-vscode-toolkit?style=flat-square&color=%23f97316&label=VS%20Code%20Marketplace" alt="VS Code Marketplace">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=andreahlert.starship-vscode-toolkit">
-    <img src="https://img.shields.io/visual-studio-marketplace/i/andreahlert.starship-vscode-toolkit?style=flat-square&color=%23f97316" alt="Installs">
+  <a href="https://marketplace.visualstudio.com/items?itemName=atoolz.starship-vscode-toolkit">
+    <img src="https://img.shields.io/visual-studio-marketplace/i/atoolz.starship-vscode-toolkit?style=flat-square&color=%23f97316" alt="Installs">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=andreahlert.starship-vscode-toolkit">
-    <img src="https://img.shields.io/visual-studio-marketplace/r/andreahlert.starship-vscode-toolkit?style=flat-square&color=%23f97316" alt="Rating">
+  <a href="https://marketplace.visualstudio.com/items?itemName=atoolz.starship-vscode-toolkit">
+    <img src="https://img.shields.io/visual-studio-marketplace/r/atoolz.starship-vscode-toolkit?style=flat-square&color=%23f97316" alt="Rating">
   </a>
   <a href="https://github.com/atoolz/starship-vscode-toolkit/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/atoolz/starship-vscode-toolkit?style=flat-square&color=%23f97316" alt="License">
@@ -100,7 +100,7 @@ All ~70 official Starship modules are supported with full option definitions, in
 Or install from the command line:
 
 ```bash
-code --install-extension andreahlert.starship-vscode-toolkit
+code --install-extension atoolz.starship-vscode-toolkit
 ```
 
 ## Requirements
