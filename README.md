@@ -18,8 +18,8 @@
   <a href="https://marketplace.visualstudio.com/items?itemName=andreahlert.starship-vscode-toolkit">
     <img src="https://img.shields.io/visual-studio-marketplace/r/andreahlert.starship-vscode-toolkit?style=flat-square&color=%23f97316" alt="Rating">
   </a>
-  <a href="https://github.com/andreahlert/starship-vscode-toolkit/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/andreahlert/starship-vscode-toolkit?style=flat-square&color=%23f97316" alt="License">
+  <a href="https://github.com/atoolz/starship-vscode-toolkit/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/atoolz/starship-vscode-toolkit?style=flat-square&color=%23f97316" alt="License">
   </a>
   <a href="https://starship.rs">
     <img src="https://img.shields.io/badge/starship-v1.x-f97316?style=flat-square" alt="Starship">
@@ -116,7 +116,7 @@ No additional configuration needed. The extension works out of the box for any f
 
 ## Contributing
 
-Contributions are welcome. Please open an issue or pull request on [GitHub](https://github.com/andreahlert/starship-vscode-toolkit).
+Contributions are welcome. Please open an issue or pull request on [GitHub](https://github.com/atoolz/starship-vscode-toolkit).
 
 ## License
 

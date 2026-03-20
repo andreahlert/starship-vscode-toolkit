@@ -10,12 +10,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andreahlert/starship-vscode-toolkit"
+    "url": "https://github.com/atoolz/starship-vscode-toolkit"
   },
   "bugs": {
-    "url": "https://github.com/andreahlert/starship-vscode-toolkit/issues"
+    "url": "https://github.com/atoolz/starship-vscode-toolkit/issues"
   },
-  "homepage": "https://github.com/andreahlert/starship-vscode-toolkit#readme",
+  "homepage": "https://github.com/atoolz/starship-vscode-toolkit#readme",
   "icon": "assets/icon.png",
   "engines": {
     "vscode": "^1.85.0"
