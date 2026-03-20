@@ -42,7 +42,7 @@ Full autocompletion for all ~70 Starship modules, their options, style strings, 
 - **Format variables** - Suggest `$symbol`, `$version`, `$branch`, etc. based on the current module
 
 <p align="center">
-  <img src="assets/demo-syntax.png" alt="IntelliSense completions demo" width="700">
+  <img src="assets/demo-syntax.gif" alt="IntelliSense completions demo" width="700">
 </p>
 
 ### Hover Documentation
